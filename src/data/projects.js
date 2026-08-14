@@ -40,7 +40,7 @@ const projects = [
     image: '/projects/pavilion-counter.webp',
     description:
       'Tasked with the design and detailing of a bespoke indoor counter for the pavilion, incorporating a built-in BBQ, sink, under-counter ice machine and fridge, pizza oven, and integrated storage. The design required careful coordination between the various appliances, services, materials, and joinery to ensure a functional and cohesive result.\n\nI was also able to attend site during the pavilion\'s construction, where I worked closely with the architects, contractors, and construction team to monitor progress, resolve issues, and assist with snagging. This provided valuable experience in translating the design into construction and coordinating details on site to ensure the project ran smoothly and was delivered as intended.',
-    tags: [],
+    tags: ['Pavilion Counter', 'Technical Detail', 'Bespoke Joinery', 'Site Coordination'],
     software: ['Revit', 'Enscape', 'SketchUp'],
   },
   {

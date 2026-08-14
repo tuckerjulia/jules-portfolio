@@ -126,6 +126,15 @@ const panel = {
   exit: { opacity: 0, y: 32, transition: { duration: 0.22, ease: 'easeIn' } },
 }
 
+const SITE_GALLERY = [
+  '/projects/pavilion-counter/site/site-1.webp',
+  '/projects/pavilion-counter/site/site-2.webp',
+  '/projects/pavilion-counter/site/site-3.webp',
+  '/projects/pavilion-counter/site/site-4.webp',
+  '/projects/pavilion-counter/site/site-5.webp',
+  '/projects/pavilion-counter/site/site-6.webp',
+]
+
 const SHOP_GALLERY = [
   '/projects/tropical-spa/shop-1.webp',
   '/projects/tropical-spa/shop-2.webp',
@@ -726,7 +735,43 @@ export default function ProjectModal({ project, onClose }) {
               <p className="text-xs italic mb-4 ml-4 mt-4" style={{ color: '#fdbf69' }}>Brainstorming</p>
               <Img src="/projects/pavilion-counter/brainstorming.webp" alt="Brainstorming sketch on pavilion floor plan" className="w-full h-auto rounded-sm mb-4" />
               <p className="text-xs italic mb-4 ml-4" style={{ color: '#fdbf69' }}>Rendered Floor Plan</p>
-              <Img src="/projects/pavilion-counter/floor-plan.webp" alt="Rendered pavilion floor plan" className="w-full h-auto rounded-sm" />
+              <Img src="/projects/pavilion-counter/floor-plan.webp" alt="Rendered pavilion floor plan" className="w-full h-auto rounded-sm mb-4" />
+              <p className="text-xs tracking-widests uppercase text-stone/40 mb-1 flex items-center gap-2">
+                <span className="inline-block w-2 h-2 rounded-full bg-gold shrink-0" />
+                Pavilion
+              </p>
+              <div className="grid grid-cols-2 gap-2 mt-4 mb-4">
+                <Img src="/projects/pavilion-counter.webp" alt="Pavilion counter and BBQ" className="w-full h-auto rounded-sm" />
+                <Img src="/projects/pavilion-counter/pavilion-1.webp" alt="Pavilion dining area" className="w-full h-auto rounded-sm" />
+              </div>
+              <a
+                href="/projects/pavilion-counter/pavilion-bbq-counter-detail.pdf"
+                download
+                className="inline-flex items-center gap-1 text-[8px] tracking-widest lowercase text-sage border border-sage/30 px-2 py-1 rounded-sm hover:bg-sage/5 transition-colors duration-150"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-2.5 h-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" />
+                </svg>
+                download technical drawing
+              </a>
+              <p className="text-xs tracking-widests uppercase text-stone/40 mb-1 mt-4 flex items-center gap-2">
+                <span className="inline-block w-2 h-2 rounded-full bg-gold shrink-0" />
+                Site Photos
+              </p>
+              <div className="mt-4 overflow-hidden">
+                <div className="flex gap-2 w-max animate-marquee hover:[animation-play-state:paused]">
+                  {[...SITE_GALLERY, ...SITE_GALLERY].map((src, i) => (
+                    <Img
+                      key={i}
+                      src={src}
+                      alt={`Pavilion site photo ${(i % SITE_GALLERY.length) + 1}`}
+                      className="h-40 w-auto rounded-sm shrink-0"
+                      gallery={SITE_GALLERY}
+                      galleryIndex={i % SITE_GALLERY.length}
+                    />
+                  ))}
+                </div>
+              </div>
             </div>
           )}
 
