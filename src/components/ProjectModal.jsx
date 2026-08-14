@@ -737,7 +737,7 @@ export default function ProjectModal({ project, onClose }) {
                 <span className="inline-block w-2 h-2 rounded-full bg-gold shrink-0" />
                 Pavilion Floor Plan
               </p>
-              <p className="text-xs italic mb-4 ml-4 mt-4" style={{ color: '#fdbf69' }}>Brainstorming</p>
+              <p className="text-xs italic mb-4 ml-4" style={{ color: '#fdbf69' }}>Brainstorming</p>
               <Img src="/projects/pavilion-counter/brainstorming.webp" alt="Brainstorming sketch on pavilion floor plan" className="w-full h-auto rounded-sm mb-4" />
               <p className="text-xs italic mb-4 ml-4" style={{ color: '#fdbf69' }}>Rendered Floor Plan</p>
               <Img src="/projects/pavilion-counter/floor-plan.webp" alt="Rendered pavilion floor plan" className="w-full h-auto rounded-sm mb-4" />
@@ -745,7 +745,8 @@ export default function ProjectModal({ project, onClose }) {
                 <span className="inline-block w-2 h-2 rounded-full bg-gold shrink-0" />
                 Pavilion
               </p>
-              <div className="grid grid-cols-2 gap-2 mt-4 mb-4">
+              <p className="text-xs italic mb-4 ml-4" style={{ color: '#fdbf69' }}>Counter</p>
+              <div className="grid grid-cols-2 gap-2 mb-4">
                 <Img src="/projects/pavilion-counter.webp" alt="Pavilion counter and BBQ" className="w-full h-auto rounded-sm" gallery={PAVILION_GALLERY} galleryIndex={0} />
                 <Img src="/projects/pavilion-counter/pavilion-1.webp" alt="Pavilion dining area" className="w-full h-auto rounded-sm" gallery={PAVILION_GALLERY} galleryIndex={1} />
               </div>

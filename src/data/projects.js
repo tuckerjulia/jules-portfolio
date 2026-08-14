@@ -31,7 +31,7 @@ const projects = [
   },
   {
     id: 8,
-    name: 'Pavilion Counter',
+    name: 'Games Area Pavilion',
     subtitle: 'Silvio Rech & Lesley Carstens',
     category: 'Work',
     location: 'Namibia',
