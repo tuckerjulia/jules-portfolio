@@ -126,6 +126,12 @@ const panel = {
   exit: { opacity: 0, y: 32, transition: { duration: 0.22, ease: 'easeIn' } },
 }
 
+const SHOP_GALLERY = [
+  '/projects/tropical-spa/shop-1.webp',
+  '/projects/tropical-spa/shop-2.webp',
+  '/projects/tropical-spa/shop-3.webp',
+]
+
 const TREATMENT_GALLERY = [
   '/projects/tropical-spa/treatment-1.webp',
   '/projects/tropical-spa/treatment-2.webp',
@@ -619,7 +625,33 @@ export default function ProjectModal({ project, onClose }) {
             <div className="mb-8">
               <p className="text-xs tracking-widests uppercase text-stone/40 mb-1 flex items-center gap-2">
                 <span className="inline-block w-2 h-2 rounded-full bg-gold shrink-0" />
-                <span className="text-stone/25 mr-1">01</span>Treatment Room
+                <span className="text-stone/25 mr-1">01</span>Spa Arrival
+              </p>
+              <p className="text-xs italic mb-4 ml-4" style={{ color: '#fdbf69' }}>Shop</p>
+              <Img src="/projects/tropical-spa/shop-1.webp" alt="Spa shop" className="w-full h-auto rounded-sm mb-2" gallery={SHOP_GALLERY} galleryIndex={0} />
+              <div className="grid grid-cols-2 gap-2 mb-4">
+                {[2, 3].map((n, i) => (
+                  <Img key={n} src={`/projects/tropical-spa/shop-${n}.webp`} alt={`Spa shop view ${n}`} className="w-full h-auto rounded-sm" gallery={SHOP_GALLERY} galleryIndex={i + 1} />
+                ))}
+              </div>
+              <a
+                href="/projects/tropical-spa/shop-display-counter.pdf"
+                download
+                className="inline-flex items-center gap-1 text-[8px] tracking-widest lowercase text-sage border border-sage/30 px-2 py-1 rounded-sm hover:bg-sage/5 transition-colors duration-150"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-2.5 h-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" />
+                </svg>
+                download technical drawing
+              </a>
+            </div>
+          )}
+
+          {project.id === 1 && (
+            <div className="mb-8">
+              <p className="text-xs tracking-widests uppercase text-stone/40 mb-1 flex items-center gap-2">
+                <span className="inline-block w-2 h-2 rounded-full bg-gold shrink-0" />
+                <span className="text-stone/25 mr-1">02</span>Treatment Room
               </p>
               <p className="text-xs italic mb-4 ml-4" style={{ color: '#fdbf69' }}>Double treatment room</p>
               <Img src="/projects/tropical-spa/treatment-1.webp" alt="Double treatment room" className="w-full h-auto rounded-sm mb-2" gallery={TREATMENT_GALLERY} galleryIndex={0} />
@@ -645,7 +677,7 @@ export default function ProjectModal({ project, onClose }) {
             <div className="mb-8">
               <p className="text-xs tracking-widests uppercase text-stone/40 mb-1 flex items-center gap-2">
                 <span className="inline-block w-2 h-2 rounded-full bg-gold shrink-0" />
-                <span className="text-stone/25 mr-1">02</span>Relaxation Area
+                <span className="text-stone/25 mr-1">03</span>Relaxation Area
               </p>
               <p className="text-xs italic mb-4 ml-4" style={{ color: '#fdbf69' }}>Changeroom 01</p>
               <Img src="/projects/tropical-spa/relaxation-2.webp" alt="Relaxation area view 1" className="w-full h-auto rounded-sm mb-2" gallery={RELAXATION_GALLERY} galleryIndex={0} />
@@ -667,7 +699,7 @@ export default function ProjectModal({ project, onClose }) {
             <div className="mb-8">
               <p className="text-xs tracking-widests uppercase text-stone/40 mb-1 flex items-center gap-2">
                 <span className="inline-block w-2 h-2 rounded-full bg-gold shrink-0" />
-                <span className="text-stone/25 mr-1">03</span>Gym
+                <span className="text-stone/25 mr-1">04</span>Gym
               </p>
               <p className="text-xs italic mb-4 ml-4" style={{ color: '#fdbf69' }}>Changeroom 02</p>
               <Img src="/projects/tropical-spa/gym-1.webp" alt="Gym changeroom 02" className="w-full h-auto rounded-sm mb-2" gallery={GYM_GALLERY} galleryIndex={0} />
