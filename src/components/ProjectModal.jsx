@@ -717,6 +717,19 @@ export default function ProjectModal({ project, onClose }) {
             </div>
           )}
 
+          {project.id === 8 && (
+            <div className="mb-8">
+              <p className="text-xs tracking-widests uppercase text-stone/40 mb-1 flex items-center gap-2">
+                <span className="inline-block w-2 h-2 rounded-full bg-gold shrink-0" />
+                Pavilion Floor Plan
+              </p>
+              <p className="text-xs italic mb-4 ml-4 mt-4" style={{ color: '#fdbf69' }}>Brainstorming</p>
+              <Img src="/projects/pavilion-counter/brainstorming.webp" alt="Brainstorming sketch on pavilion floor plan" className="w-full h-auto rounded-sm mb-4" />
+              <p className="text-xs italic mb-4 ml-4" style={{ color: '#fdbf69' }}>Rendered Floor Plan</p>
+              <Img src="/projects/pavilion-counter/floor-plan.webp" alt="Rendered pavilion floor plan" className="w-full h-auto rounded-sm" />
+            </div>
+          )}
+
           {project.myRole && (
             <div className="mb-8">
               <p className="text-xs tracking-widests uppercase text-stone/40 mb-3">My Role</p>
