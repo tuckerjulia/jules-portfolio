@@ -135,6 +135,11 @@ const SITE_GALLERY = [
   '/projects/pavilion-counter/site/site-6.webp',
 ]
 
+const PAVILION_GALLERY = [
+  '/projects/pavilion-counter.webp',
+  '/projects/pavilion-counter/pavilion-1.webp',
+]
+
 const SHOP_GALLERY = [
   '/projects/tropical-spa/shop-1.webp',
   '/projects/tropical-spa/shop-2.webp',
@@ -741,8 +746,8 @@ export default function ProjectModal({ project, onClose }) {
                 Pavilion
               </p>
               <div className="grid grid-cols-2 gap-2 mt-4 mb-4">
-                <Img src="/projects/pavilion-counter.webp" alt="Pavilion counter and BBQ" className="w-full h-auto rounded-sm" />
-                <Img src="/projects/pavilion-counter/pavilion-1.webp" alt="Pavilion dining area" className="w-full h-auto rounded-sm" />
+                <Img src="/projects/pavilion-counter.webp" alt="Pavilion counter and BBQ" className="w-full h-auto rounded-sm" gallery={PAVILION_GALLERY} galleryIndex={0} />
+                <Img src="/projects/pavilion-counter/pavilion-1.webp" alt="Pavilion dining area" className="w-full h-auto rounded-sm" gallery={PAVILION_GALLERY} galleryIndex={1} />
               </div>
               <a
                 href="/projects/pavilion-counter/pavilion-bbq-counter-detail.pdf"
