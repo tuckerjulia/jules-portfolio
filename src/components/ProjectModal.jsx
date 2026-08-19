@@ -374,6 +374,18 @@ export default function ProjectModal({ project, onClose }) {
                   galleryIndex={1}
                 />
               </div>
+              <p className="text-xs tracking-wide lowercase font-light italic mb-4" style={{ color: '#fdbf69' }}>Walls</p>
+              <Img
+                src="/projects/sideris-church-foyer/walls.webp"
+                alt="Sideris Church Foyer wall materiality moodboard"
+                className="w-full h-auto rounded-sm mb-8"
+              />
+              <p className="text-xs tracking-wide lowercase font-light italic mb-4" style={{ color: '#fdbf69' }}>Lighting</p>
+              <Img
+                src="/projects/sideris-church-foyer/lighting.webp"
+                alt="Sideris Church Foyer lighting moodboard"
+                className="w-full h-auto rounded-sm mb-8"
+              />
             </>
           )}
 
