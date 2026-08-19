@@ -176,6 +176,12 @@ const RESORT_PLANS_GALLERY = [
 
 const SKETCHES_GALLERY = Array.from({ length: 15 }, (_, i) => `/projects/closed-loop-incubator/sketches/${i + 1}.jpg`)
 
+const SIDERIS_SITE_GALLERY = [
+  '/projects/sideris-church-foyer/site/site-1.webp',
+  '/projects/sideris-church-foyer/site/site-2.webp',
+  '/projects/sideris-church-foyer/site/site-3.webp',
+]
+
 export default function ProjectModal({ project, onClose }) {
   // enlargedImg = { src, gallery: string[] | null, index: number }
   const [enlargedImg, setEnlargedImg] = useState(null)
@@ -319,7 +325,33 @@ export default function ProjectModal({ project, onClose }) {
           </div>
 
           {project.id === 9 && (
-            <p className="text-2xl md:text-3xl font-bold text-center mb-8" style={{ color: '#fdbf69' }}>TBC</p>
+            <>
+              <p className="text-2xl md:text-3xl font-bold text-center mb-8" style={{ color: '#fdbf69' }}>TBC</p>
+              <p className="text-xs tracking-widest uppercase text-stone/40 mb-4 flex items-center gap-2">
+                <span className="inline-block w-2 h-2 rounded-full bg-gold shrink-0" />
+                Site Photos
+              </p>
+              <div className="grid grid-cols-3 gap-2 mb-8">
+                {SIDERIS_SITE_GALLERY.map((src, i) => (
+                  <Img
+                    key={src}
+                    src={src}
+                    alt={`Sideris Church Foyer site photo ${i + 1}`}
+                    className="w-full h-auto rounded-sm"
+                    gallery={SIDERIS_SITE_GALLERY}
+                    galleryIndex={i}
+                  />
+                ))}
+              </div>
+              <video
+                src="/projects/sideris-church-foyer/site/site-video.mp4"
+                controls
+                controlsList="novolume"
+                muted
+                playsInline
+                className="w-full h-auto rounded-sm mb-8"
+              />
+            </>
           )}
 
           {project.id === 3 && (
