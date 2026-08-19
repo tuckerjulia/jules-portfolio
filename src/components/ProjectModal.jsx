@@ -329,8 +329,14 @@ export default function ProjectModal({ project, onClose }) {
               <p className="text-2xl md:text-3xl font-bold text-center mb-8" style={{ color: '#fdbf69' }}>TBC</p>
               <p className="text-xs tracking-widest uppercase text-stone/40 mb-4 flex items-center gap-2">
                 <span className="inline-block w-2 h-2 rounded-full bg-gold shrink-0" />
-                Site Photos
+                Existing Layout
               </p>
+              <Img
+                src="/projects/sideris-church-foyer/existing-layout.webp"
+                alt="Sideris Church Foyer existing layout floor plan"
+                className="w-full h-auto rounded-sm mb-8"
+              />
+              <p className="text-xs tracking-wide lowercase font-light italic mb-4" style={{ color: '#fdbf69' }}>Site Photos</p>
               <div className="grid grid-cols-3 gap-2 mb-8">
                 {SIDERIS_SITE_GALLERY.map((src, i) => (
                   <Img
@@ -343,12 +349,13 @@ export default function ProjectModal({ project, onClose }) {
                   />
                 ))}
               </div>
-              <video
-                src="/projects/sideris-church-foyer/site/site-video.mp4"
-                controls
-                controlsList="novolume"
-                muted
-                playsInline
+              <p className="text-xs tracking-widest uppercase text-stone/40 mb-4 flex items-center gap-2">
+                <span className="inline-block w-2 h-2 rounded-full bg-gold shrink-0" />
+                Proposed Layout
+              </p>
+              <Img
+                src="/projects/sideris-church-foyer/proposed-layout.webp"
+                alt="Sideris Church Foyer proposed layout floor plan"
                 className="w-full h-auto rounded-sm mb-8"
               />
             </>
