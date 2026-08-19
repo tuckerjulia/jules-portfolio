@@ -182,6 +182,11 @@ const SIDERIS_SITE_GALLERY = [
   '/projects/sideris-church-foyer/site/site-3.webp',
 ]
 
+const SIDERIS_PROPOSED_GALLERY = [
+  '/projects/sideris-church-foyer/proposed-layout.webp',
+  '/projects/sideris-church-foyer/proposed-movement.webp',
+]
+
 export default function ProjectModal({ project, onClose }) {
   // enlargedImg = { src, gallery: string[] | null, index: number }
   const [enlargedImg, setEnlargedImg] = useState(null)
@@ -353,11 +358,22 @@ export default function ProjectModal({ project, onClose }) {
                 <span className="inline-block w-2 h-2 rounded-full bg-gold shrink-0" />
                 Proposed Layout
               </p>
-              <Img
-                src="/projects/sideris-church-foyer/proposed-layout.webp"
-                alt="Sideris Church Foyer proposed layout floor plan"
-                className="w-full h-auto rounded-sm mb-8"
-              />
+              <div className="grid grid-cols-2 gap-2 mb-8">
+                <Img
+                  src="/projects/sideris-church-foyer/proposed-layout.webp"
+                  alt="Sideris Church Foyer proposed layout floor plan"
+                  className="w-full h-auto rounded-sm"
+                  gallery={SIDERIS_PROPOSED_GALLERY}
+                  galleryIndex={0}
+                />
+                <Img
+                  src="/projects/sideris-church-foyer/proposed-movement.webp"
+                  alt="Sideris Church Foyer proposed layout movement and circulation diagram"
+                  className="w-full h-auto rounded-sm"
+                  gallery={SIDERIS_PROPOSED_GALLERY}
+                  galleryIndex={1}
+                />
+              </div>
             </>
           )}
 

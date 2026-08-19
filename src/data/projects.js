@@ -1,5 +1,19 @@
 const projects = [
   {
+    id: 9,
+    name: 'Sideris Church Foyer',
+    subtitle: 'Church Renovation',
+    category: 'Explorations',
+    location: 'Ballard, Seattle',
+    year: '2026',
+    area: '~220m²',
+    image: '/projects/sideris-church-foyer.webp',
+    description:
+      'Working alongside the church team in Ballard, Seattle, I helped envision a new foyer that would transform the existing 1982 church into a warmer, more welcoming space for the congregation. The design was rooted in a warm, vintage residential feel, creating an inviting environment where people could gather, connect, and linger.\n\nA rich palette of aged brick, walnut, velvet, and stained-glass brings warmth and character, while carefully selected upholstery and pendant colours echo the tones found within the existing stained-glass windows, creating a cohesive connection between the architecture and furnishings. The existing timber beams were exposed and celebrated as a defining feature of the structure, adding warmth, texture, and a sense of history to the space. Curved banquette seating and intimate furniture groupings soften the existing architecture, while a dedicated coffee bar and library nook with bar seating introduce more informal spaces for conversation, reading, and community.\n\nThe result is an approachable, layered interior that feels collected and timeless rather than institutional. Celebrating the character of the original building while creating a welcoming space for everyone who walks through the doors.',
+    tags: ['Church Renovation', 'Adaptive Reuse', 'Community Space', 'Foyer Design', 'Concept Design'],
+    software: ['Enscape', 'Revit', 'Adobe Photoshop'],
+  },
+  {
     id: 7,
     name: 'Between Tide & Time',
     subtitle: 'Renovated Guestroom Exploration',
@@ -114,20 +128,6 @@ const projects = [
       'A creative incubator with a retail and makerspace in Pretoria Central built around a closed-loop design process, centred on the sale and production of a uniquely designed upcycled luminaire. Branded "Cinergy," the store challenges consumerist retail culture, using materials from the luminaire itself to spotlight plastic waste and bring sustainability awareness into an inner-city retail environment. Guided by the principle: Eliminate. Regenerate. Illuminate.',
     tags: ['Creative Incubator', 'Adaptive Reuse', 'Retail & Makerspace', 'Closed-Loop Design', 'Product Design'],
     software: ['AutoCAD', 'Adobe Photoshop', 'Adobe Illustrator'],
-  },
-  {
-    id: 9,
-    name: 'Sideris Church Foyer',
-    subtitle: 'Church Renovation',
-    category: 'Explorations',
-    location: 'Ballard, Seattle',
-    year: '2026',
-    area: '~220m²',
-    image: '/projects/sideris-church-foyer.webp',
-    description:
-      'Working alongside the church team in Ballard, Seattle, I helped envision a new foyer that would transform the existing 1982 church into a warmer, more welcoming space for the congregation. The design was rooted in a warm, vintage residential feel, creating an inviting environment where people could gather, connect, and linger.\n\nA rich palette of aged brick, walnut, velvet, and stained-glass brings warmth and character, while carefully selected upholstery and pendant colours echo the tones found within the existing stained-glass windows, creating a cohesive connection between the architecture and furnishings. The existing timber beams were exposed and celebrated as a defining feature of the structure, adding warmth, texture, and a sense of history to the space. Curved banquette seating and intimate furniture groupings soften the existing architecture, while a dedicated coffee bar and library nook with bar seating introduce more informal spaces for conversation, reading, and community.\n\nThe result is an approachable, layered interior that feels collected and timeless rather than institutional. Celebrating the character of the original building while creating a welcoming space for everyone who walks through the doors.',
-    tags: ['Church Renovation', 'Adaptive Reuse', 'Community Space', 'Foyer Design', 'Concept Design'],
-    software: ['Enscape', 'Revit', 'Adobe Photoshop'],
   },
 ]
 
