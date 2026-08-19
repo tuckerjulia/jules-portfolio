@@ -318,6 +318,10 @@ export default function ProjectModal({ project, onClose }) {
             )}
           </div>
 
+          {project.id === 9 && (
+            <p className="text-2xl md:text-3xl font-bold text-center mb-8" style={{ color: '#fdbf69' }}>TBC</p>
+          )}
+
           {project.id === 3 && (
             <div className="mb-8">
               <p className="text-xs tracking-widest uppercase text-stone/40 mb-4 flex items-center gap-2">
