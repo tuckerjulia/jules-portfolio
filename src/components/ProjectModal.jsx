@@ -187,6 +187,11 @@ const SIDERIS_PROPOSED_GALLERY = [
   '/projects/sideris-church-foyer/proposed-movement.webp',
 ]
 
+const SIDERIS_RENDERS_GALLERY = [
+  '/projects/sideris-church-foyer/renders/render-1.webp',
+  '/projects/sideris-church-foyer/renders/render-2.webp',
+]
+
 export default function ProjectModal({ project, onClose }) {
   // enlargedImg = { src, gallery: string[] | null, index: number }
   const [enlargedImg, setEnlargedImg] = useState(null)
@@ -331,7 +336,6 @@ export default function ProjectModal({ project, onClose }) {
 
           {project.id === 9 && (
             <>
-              <p className="text-2xl md:text-3xl font-bold text-center mb-8" style={{ color: '#fdbf69' }}>TBC</p>
               <p className="text-xs tracking-widest uppercase text-stone/40 mb-4 flex items-center gap-2">
                 <span className="inline-block w-2 h-2 rounded-full bg-gold shrink-0" />
                 Existing Layout
@@ -374,6 +378,10 @@ export default function ProjectModal({ project, onClose }) {
                   galleryIndex={1}
                 />
               </div>
+              <p className="text-xs tracking-widest uppercase text-stone/40 mb-4 flex items-center gap-2">
+                <span className="inline-block w-2 h-2 rounded-full bg-gold shrink-0" />
+                Look &amp; Feel
+              </p>
               <p className="text-xs tracking-wide lowercase font-light italic mb-4" style={{ color: '#fdbf69' }}>Walls</p>
               <Img
                 src="/projects/sideris-church-foyer/walls.webp"
@@ -386,6 +394,41 @@ export default function ProjectModal({ project, onClose }) {
                 alt="Sideris Church Foyer lighting moodboard"
                 className="w-full h-auto rounded-sm mb-8"
               />
+              <p className="text-xs tracking-wide lowercase font-light italic mb-4" style={{ color: '#fdbf69' }}>Ceiling</p>
+              <Img
+                src="/projects/sideris-church-foyer/ceiling.webp"
+                alt="Sideris Church Foyer ceiling moodboard"
+                className="w-full h-auto rounded-sm mb-8"
+              />
+              <p className="text-xs tracking-wide lowercase font-light italic mb-4" style={{ color: '#fdbf69' }}>Flooring</p>
+              <Img
+                src="/projects/sideris-church-foyer/flooring.webp"
+                alt="Sideris Church Foyer flooring moodboard"
+                className="w-full h-auto rounded-sm mb-8"
+              />
+              <p className="text-xs tracking-widest uppercase text-stone/40 mb-4 flex items-center gap-2">
+                <span className="inline-block w-2 h-2 rounded-full bg-gold shrink-0" />
+                Visualisations
+              </p>
+              <p className="text-xs tracking-wide lowercase font-light italic mb-4" style={{ color: '#fdbf69' }}>Axonometric Perspectives</p>
+              <Img
+                src="/projects/sideris-church-foyer/axo-perspectives.webp"
+                alt="Sideris Church Foyer axonometric perspective renders"
+                className="w-full h-auto rounded-sm mb-8"
+              />
+              <p className="text-xs tracking-wide lowercase font-light italic mb-4" style={{ color: '#fdbf69' }}>Renders</p>
+              <div className="flex flex-col gap-2 mb-8">
+                {SIDERIS_RENDERS_GALLERY.map((src, i) => (
+                  <Img
+                    key={src}
+                    src={src}
+                    alt={`Sideris Church Foyer render ${i + 1}`}
+                    className="w-full h-auto rounded-sm"
+                    gallery={SIDERIS_RENDERS_GALLERY}
+                    galleryIndex={i}
+                  />
+                ))}
+              </div>
             </>
           )}
 
