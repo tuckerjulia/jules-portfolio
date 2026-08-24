@@ -50,7 +50,7 @@ export default function Contact() {
 
           <div className="flex items-center gap-3 mt-5">
             <MdPhone size={22} style={{ color: '#fdbf69' }} />
-            <a href="tel:+12063960583" className="text-sm text-stone/50 hover:text-stone transition-colors duration-200">+1 206 396 0583</a>
+            <a href="tel:+447533936649" className="text-sm text-stone/50 hover:text-stone transition-colors duration-200">+44 7533 936649</a>
           </div>
         </div>
 
