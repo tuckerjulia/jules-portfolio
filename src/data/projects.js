@@ -116,6 +116,23 @@ const projects = [
     software: ['QGIS', 'Procreate', 'Affinity Designer', 'Epicollect', 'Adobe Photoshop'],
   },
   {
+    id: 10,
+    name: 'Cepheid Culross Workplace',
+    subtitle: 'Design Partnership',
+    category: 'Work',
+    location: 'Johannesburg, South Africa',
+    year: '2020',
+    role: 'Interior Design Intern',
+    image: '/projects/cepheid-culross.webp',
+    imageFit: 'contain',
+    imageBg: '#FFFFFF',
+    imagePadding: '4%',
+    description:
+      'A concept-stage workplace design located in Johannesburg, developed in response to the evolving role of the workplace in a post-COVID context. The project translates Cepheid’s brand philosophy into a warm, wellness-driven environment inspired by the character of hospitality. With hybrid working reshaping how people interact with the office, the design focuses on creating a workplace that encourages connection, collaboration and wellbeing, while providing spaces for focus, flexibility and moments of retreat.\n\nRooted in Cepheid’s philosophy of Kaizen (continuous, incremental improvement through empathy and care), the concept is expressed through the idea of “a better business, a better way, a better place.” This philosophy is embodied in the recurring metaphor of an oasis: a place to grow, connect and find moments of calm.\n\nThe design language is shaped by human-centred planning, biophilia, warm and tactile materiality, simplicity and flexibility. Together, these principles create an adaptable workplace that responds to the changing needs of a post-pandemic workforce while reimagining the office as a place people actively want to return to.',
+    tags: ['Workplace Design', 'Biophilia', 'Post-Covid Workplace', 'Material Exploration', 'Brand Identity'],
+    software: ['Adobe Photoshop', 'Affinity Designer'],
+  },
+  {
     id: 6,
     name: 'Creative Incubator',
     subtitle: 'Product & Retail Design',

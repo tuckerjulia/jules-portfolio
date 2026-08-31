@@ -23,7 +23,13 @@ function ProjectCard({ project, onClick }) {
   const [imgError, setImgError] = useState(false)
   return (
     <motion.button variants={cardVariants} onClick={onClick} className="group text-left">
-      <div className="w-full aspect-[3/2] overflow-hidden rounded-sm mb-4 bg-stone/5">
+      <div
+        className="w-full aspect-[3/2] overflow-hidden rounded-sm mb-4 bg-stone/5 box-border"
+        style={{
+          backgroundColor: project.imageBg || undefined,
+          padding: project.imagePadding || undefined,
+        }}
+      >
         {imgError ? (
           <div className="w-full h-full flex items-center justify-center">
             <span className="text-xs tracking-widest uppercase text-stone/25">Image</span>
@@ -33,7 +39,7 @@ function ProjectCard({ project, onClick }) {
             src={project.image}
             alt={project.name}
             onError={() => setImgError(true)}
-            className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+            className={`w-full h-full transition-transform duration-700 ease-out group-hover:scale-[1.04] ${project.imageFit === 'contain' ? 'object-contain' : 'object-cover'}`}
           />
         )}
       </div>
