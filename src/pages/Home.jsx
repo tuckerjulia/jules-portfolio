@@ -76,6 +76,10 @@ export default function Home() {
                 <p className="text-xs font-light text-stone/70 leading-relaxed text-justify">After graduating with distinction in my undergraduate degree, I sought work that would challenge me to advance my technical and software skills. At Luxury Frontiers, I assisted in the design and technical drawings of world-class hospitality resorts and lodges (which have received multiple awards) refining my technical expertise, attention to detail and ability to perform under pressure. I worked on two projects (a resort and tented camp in Puerto Rico and Saudi Arabia) within an interior team of seven, comprising two senior designers and five juniors on a six-month probation period. At the end of this period, three of us, including myself, were offered permanent contracts. This role also provided valuable experience in cross-disciplinary coordination and effective communication.</p>
               </WorkEntry>
 
+              <WorkEntry dates={['Dec 2020 –', 'Apr 2021']} company="Design Partnership" role="Interior Design Intern · Johannesburg, South Africa">
+                <p className="text-xs font-light text-stone/70 leading-relaxed text-justify">Worked across retail and corporate interior projects, supporting the design process from initial concept development through to spatial planning and schedules. Assisted in establishing project look and feel, translating brand identities into interior environments, and developing layouts and presentations. Projects included the Cepheid Culross corporate office and a DSTV retail kiosk.</p>
+              </WorkEntry>
+
               <WorkEntry dates={['Jul 2018 –', 'Aug 2018']} company="Charles Taylor Architects" role="Intern · Ballito, South Africa">
                 <p className="text-xs font-light text-stone/70 leading-relaxed text-justify">During the July holidays, I interned at CTA and went to various site visits and client meetings, as well as shadowed and assisted the Interior Architects in corporate and residential design projects.</p>
               </WorkEntry>
@@ -250,6 +254,34 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+      </FadeIn>
+
+      {/* References */}
+      <FadeIn>
+        <section className="px-6 md:px-16 pb-20 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-[200px_1fr] gap-8 md:gap-16 items-start">
+            <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold pt-1">References</p>
+            <p className="text-sm font-light text-stone/50">Available upon request</p>
+          </div>
+        </section>
+      </FadeIn>
+
+      {/* Letters of Recommendation */}
+      <FadeIn>
+        <section className="px-6 md:px-16 pb-20 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-[200px_1fr] gap-8 md:gap-16 items-start">
+            <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold pt-1">Letters of Recommendation</p>
+            <a
+              href="/references/Nonku%20Grootboom.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-sm font-light text-stone/80 hover:text-terra underline underline-offset-4 transition-colors"
+            >
+              <MdTouchApp size={18} style={{ color: '#fdbf69' }} className="shrink-0" />
+              Nonkululeko Grootboom
+            </a>
           </div>
         </section>
       </FadeIn>
