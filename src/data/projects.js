@@ -117,7 +117,7 @@ const projects = [
   },
   {
     id: 10,
-    name: 'Cepheid Culross Workplace',
+    name: 'Cepheid Workplace',
     subtitle: 'Design Partnership',
     category: 'Work',
     location: 'Johannesburg, South Africa',
