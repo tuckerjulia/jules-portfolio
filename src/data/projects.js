@@ -25,6 +25,7 @@ const projects = [
     imageFit: 'contain',
     imageBg: '#FFFFFF',
     imagePadding: '4%',
+    imagePaddingMobile: '2% 4% 6% 4%',
     description:
       'Between Tide & Time is a conceptual proposal for the renovation of a five-star guestroom at a luxury island resort on Sir Bani Yas Island, Abu Dhabi. Inspired by the meeting of desert and sea, the design reinterprets the island\'s unique genius loci through a contemporary hospitality experience that celebrates both its heritage and extraordinary natural landscape.\n\nThe proposal responds to the brief\'s ambition to modernise the resort while preserving its authentic character. Drawing from the island\'s shifting dunes, coastal waters, native wildlife, and artisanal heritage, the design creates a calm, immersive sanctuary where every element contributes to a seamless guest experience. Spatial planning, bespoke joinery, curated FF&E, lighting, materiality, and art direction work together to blur the boundaries between interior and landscape, extending the room into its surrounding environment.',
     tags: ['Guestroom Renovation', 'Material Exploration', 'Hospitality Design', 'Personal Work'],
