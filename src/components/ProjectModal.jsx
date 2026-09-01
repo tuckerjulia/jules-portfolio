@@ -371,6 +371,20 @@ export default function ProjectModal({ project, onClose }) {
                 <span className="inline-block w-2 h-2 rounded-full bg-gold shrink-0" />
                 Layouts
               </p>
+              <div className="flex items-start gap-2 mb-8">
+                <div className="w-1/2">
+                  <p className="text-xs italic mb-1" style={{ color: '#fdbf69' }}>Ground Floor</p>
+                  <Img src="/projects/cepheid-culross/zoning-legend.jpg" alt="Zoning close-up showing cafe, meeting spaces, outdoor spaces, training space, and reception & foyer" className="w-full h-auto rounded-sm" />
+                </div>
+                <div className="w-1/2">
+                  <p className="text-xs italic mb-1" style={{ color: '#fdbf69' }}>First Floor</p>
+                  <Img src="/projects/cepheid-culross/zoning-legend-first-floor.jpg" alt="Zoning close-up showing meeting spaces, dedicated offices, open plan, wellness cafe & kitchenette, and breakout spaces" className="w-full h-auto rounded-sm" />
+                </div>
+              </div>
+              <p className="text-xs tracking-widest uppercase text-stone/40 mb-4 flex items-center gap-2">
+                <span className="inline-block w-2 h-2 rounded-full bg-gold shrink-0" />
+                Look & Feel
+              </p>
               <p className="text-xs italic mb-4 ml-4" style={{ color: '#fdbf69' }}>Ground Floor</p>
               <Img src="/projects/cepheid-culross/ground-floor.jpg" alt="Ground floor layout with programme zones: cafe, meeting spaces, training space, and reception & foyer" className="w-full h-auto rounded-sm mb-8" />
               <p className="text-xs italic mb-4 ml-4" style={{ color: '#fdbf69' }}>First Floor</p>
