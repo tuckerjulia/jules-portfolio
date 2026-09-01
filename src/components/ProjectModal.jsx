@@ -335,7 +335,33 @@ export default function ProjectModal({ project, onClose }) {
           </div>
 
           {project.id === 10 && (
-            <p className="text-2xl md:text-3xl font-bold text-center mb-8" style={{ color: '#fdbf69' }}>TBC</p>
+            <>
+              <p className="text-xs tracking-widest uppercase text-stone/40 mb-1 flex items-center gap-2">
+                <span className="inline-block w-2 h-2 rounded-full bg-gold shrink-0" />
+                Brand
+              </p>
+              <p className="text-xs italic mb-4 ml-4" style={{ color: '#fdbf69' }}>Cepheid</p>
+              <p className="text-[10px] md:text-xs leading-relaxed text-stone/80 text-justify mb-4">Cepheid is a California-based diagnostics company that revolutionised testing through its GeneXpert System and range of on-demand disease tests. Its philosophy is rooted in Kaizen (the continuous pursuit of improvement).</p>
+              <Img src="/projects/cepheid-culross/brand.png" alt="Cepheid brand identity — logo, wordmark, and Kaizen philosophy diagram" className="w-2/3 h-auto rounded-sm mb-8 mx-auto" />
+              <p className="text-xs tracking-widest uppercase text-stone/40 mb-4 flex items-center gap-2">
+                <span className="inline-block w-2 h-2 rounded-full bg-gold shrink-0" />
+                COVID-19 &amp; Beyond
+              </p>
+              <div className="flex gap-2 mb-8">
+                <Img src="/projects/cepheid-culross/venn-safe-economy.png" alt="Venn diagram of physical, emotional, and cognitive factors converging on the safe economy" className="w-1/2 h-auto rounded-sm" />
+                <Img src="/projects/cepheid-culross/venn.png" alt="Venn diagram of placemaking, corporate culture, and best practice converging on work wellness" className="w-1/2 h-auto rounded-sm" />
+              </div>
+              <p className="text-xs italic mb-4" style={{ color: '#fdbf69' }}>Insights</p>
+              <Img src="/projects/cepheid-culross/insights.png" alt="Four workplace insights: evolving office roles, culture and collaboration, accelerating pre-pandemic trends, and hybrid workforce flexibility" className="w-4/5 h-auto rounded-sm mb-8 mx-auto" />
+              <p className="text-xs tracking-widest uppercase text-stone/40 mb-1 flex items-center gap-2">
+                <span className="inline-block w-2 h-2 rounded-full bg-gold shrink-0" />
+                Design Principles
+              </p>
+              <p className="text-xs italic mb-4 ml-4" style={{ color: '#fdbf69' }}>Kaizen</p>
+              <Img src="/projects/cepheid-culross/design-principles.png" alt="Five Kaizen design principles: asymmetry, simplicity, naturalness, subtlety, and stillness" className="w-full h-auto rounded-sm mb-8" />
+              <p className="text-xs italic mb-4" style={{ color: '#fdbf69' }}>Workplace Implementation</p>
+              <Img src="/projects/cepheid-culross/implementation.png" alt="Five Kaizen design principles applied in the workplace: asymmetry, simplicity, naturalness, subtlety, and stillness" className="w-full h-auto rounded-sm mb-8" />
+            </>
           )}
 
           {project.id === 9 && (
