@@ -16,7 +16,7 @@ const projects = [
   {
     id: 7,
     name: 'Between Tide & Time',
-    subtitle: 'Renovated Guestroom Exploration',
+    subtitle: 'Guestroom Renovation',
     category: 'Explorations',
     location: 'Sir Bani Yas Island, Abu Dhabi, UAE',
     year: '2026',
