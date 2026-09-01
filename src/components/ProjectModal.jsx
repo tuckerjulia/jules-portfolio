@@ -372,6 +372,9 @@ export default function ProjectModal({ project, onClose }) {
                 Layouts
               </p>
               <p className="text-xs italic mb-4 ml-4" style={{ color: '#fdbf69' }}>Ground Floor</p>
+              <Img src="/projects/cepheid-culross/ground-floor.png" alt="Ground floor layout with programme zones: cafe, meeting spaces, training space, and reception & foyer" className="w-full h-auto rounded-sm mb-8" />
+              <p className="text-xs italic mb-4 ml-4" style={{ color: '#fdbf69' }}>First Floor</p>
+              <Img src="/projects/cepheid-culross/first-floor.png" alt="First floor layout with programme zones: meeting spaces, dedicated offices, open plan, wellness cafe & kitchenette, and breakout spaces" className="w-full h-auto rounded-sm mb-8" />
             </>
           )}
 
