@@ -365,7 +365,13 @@ export default function ProjectModal({ project, onClose }) {
                 <span className="inline-block w-2 h-2 rounded-full bg-gold shrink-0" />
                 Colour & Materiality
               </p>
-              <Img src="/projects/cepheid-culross/materiality.png" alt="Materiality moodboard: porcelain floor tiles, ceramic wall tiles, frosted glass, timber slats, plywood, cork, OSB, herringbone flooring, window treatment, acoustic absorbers, and colour palette" className="w-4/5 h-auto rounded-sm mb-8 mx-auto" />
+              <p className="text-[10px] md:text-xs leading-relaxed text-stone/80 text-justify mb-4">A warm, natural palette with soft pastel colours creates a calm, light-filled and open environment for human wellbeing and productivity.</p>
+              <Img src="/projects/cepheid-culross/materiality.png" alt="Materiality moodboard: porcelain floor tiles, ceramic wall tiles, frosted glass, timber slats, plywood, cork, OSB, herringbone flooring, window treatment, acoustic absorbers, and colour palette" className="w-full h-auto rounded-sm mb-8" />
+              <p className="text-xs tracking-widest uppercase text-stone/40 mb-1 flex items-center gap-2">
+                <span className="inline-block w-2 h-2 rounded-full bg-gold shrink-0" />
+                Layouts
+              </p>
+              <p className="text-xs italic mb-4 ml-4" style={{ color: '#fdbf69' }}>Ground Floor</p>
             </>
           )}
 
