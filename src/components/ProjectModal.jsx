@@ -352,7 +352,7 @@ export default function ProjectModal({ project, onClose }) {
                 <Img src="/projects/cepheid-culross/venn.png" alt="Venn diagram of placemaking, corporate culture, and best practice converging on work wellness" className="w-1/2 h-auto rounded-sm" />
               </div>
               <p className="text-xs italic mb-4" style={{ color: '#fdbf69' }}>Insights</p>
-              <Img src="/projects/cepheid-culross/insights.jpg" alt="Four workplace insights: evolving office roles, culture and collaboration, accelerating pre-pandemic trends, and hybrid workforce flexibility" className="w-4/5 h-auto rounded-sm mb-8 mx-auto" />
+              <Img src="/projects/cepheid-culross/insights.jpg" alt="Four workplace insights: evolving office roles, culture and collaboration, accelerating pre-pandemic trends, and hybrid workforce flexibility" className="w-full h-auto rounded-sm mb-8" />
               <p className="text-xs tracking-widest uppercase text-stone/40 mb-1 flex items-center gap-2">
                 <span className="inline-block w-2 h-2 rounded-full bg-gold shrink-0" />
                 Design Principles
