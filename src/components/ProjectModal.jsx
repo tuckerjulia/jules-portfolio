@@ -358,6 +358,7 @@ export default function ProjectModal({ project, onClose }) {
                 Design Principles
               </p>
               <p className="text-xs italic mb-4 ml-4" style={{ color: '#fdbf69' }}>Kaizen</p>
+              <p className="text-[10px] md:text-xs leading-relaxed text-stone/80 text-justify mb-4">Kaizen is a Japanese business philosophy of continuous, incremental improvement, rooted in simplicity, mindfulness and the belief that small positive changes can create meaningful progress over time.</p>
               <Img src="/projects/cepheid-culross/design-principles.jpg" alt="Five Kaizen design principles: asymmetry, simplicity, naturalness, subtlety, and stillness" className="w-full h-auto rounded-sm mb-8" />
               <p className="text-xs italic mb-4" style={{ color: '#fdbf69' }}>Workplace Implementation</p>
               <Img src="/projects/cepheid-culross/implementation.jpg" alt="Five Kaizen design principles applied in the workplace: asymmetry, simplicity, naturalness, subtlety, and stillness" className="w-full h-auto rounded-sm mb-8" />
@@ -389,6 +390,8 @@ export default function ProjectModal({ project, onClose }) {
               <Img src="/projects/cepheid-culross/ground-floor.jpg" alt="Ground floor layout with programme zones: cafe, meeting spaces, training space, and reception & foyer" className="w-full h-auto rounded-sm mb-8" />
               <p className="text-xs italic mb-4 ml-4" style={{ color: '#fdbf69' }}>First Floor</p>
               <Img src="/projects/cepheid-culross/first-floor.jpg" alt="First floor layout with programme zones: meeting spaces, dedicated offices, open plan, wellness cafe & kitchenette, and breakout spaces" className="w-full h-auto rounded-sm mb-8" />
+              <p className="text-xs tracking-widests uppercase text-stone/40 mb-3">My Role</p>
+              <p className="text-xs leading-relaxed text-stone/80 text-justify mb-8">I supported the development of the Cepheid workplace concept, helping translate the principles of Kaizen into the spatial design. My role included contributing to the overall design approach, spatial planning, layouts and zoning, as well as researching Cepheid's brand, values and visual identity. I assisted in developing the workplace's look and feel, including the selection of materials, finishes and colour palettes, with a focus on creating a warm, welcoming and wellness-driven environment. I also contributed to the design of key spaces including the reception, wellness café, meeting areas and training spaces, ensuring each responded to its intended function while maintaining a cohesive overall design language.</p>
             </>
           )}
 

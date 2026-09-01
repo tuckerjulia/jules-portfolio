@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import PageTransition from '../components/PageTransition'
 import ProjectModal from '../components/ProjectModal'
@@ -21,13 +21,25 @@ const cardVariants = {
 
 function ProjectCard({ project, onClick }) {
   const [imgError, setImgError] = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const mq = window.matchMedia('(max-width: 639px)')
+    setIsMobile(mq.matches)
+    const handler = (e) => setIsMobile(e.matches)
+    mq.addEventListener('change', handler)
+    return () => mq.removeEventListener('change', handler)
+  }, [])
+
+  const padding = (isMobile && project.imagePaddingMobile) || project.imagePadding
+
   return (
     <motion.button variants={cardVariants} onClick={onClick} className="group text-left">
       <div
         className="w-full aspect-[3/2] overflow-hidden rounded-sm mb-4 bg-stone/5 box-border"
         style={{
           backgroundColor: project.imageBg || undefined,
-          padding: project.imagePadding || undefined,
+          padding: padding || undefined,
         }}
       >
         {imgError ? (
