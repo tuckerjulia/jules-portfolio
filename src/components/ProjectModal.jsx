@@ -361,6 +361,11 @@ export default function ProjectModal({ project, onClose }) {
               <Img src="/projects/cepheid-culross/design-principles.png" alt="Five Kaizen design principles: asymmetry, simplicity, naturalness, subtlety, and stillness" className="w-full h-auto rounded-sm mb-8" />
               <p className="text-xs italic mb-4" style={{ color: '#fdbf69' }}>Workplace Implementation</p>
               <Img src="/projects/cepheid-culross/implementation.png" alt="Five Kaizen design principles applied in the workplace: asymmetry, simplicity, naturalness, subtlety, and stillness" className="w-full h-auto rounded-sm mb-8" />
+              <p className="text-xs tracking-widest uppercase text-stone/40 mb-4 flex items-center gap-2">
+                <span className="inline-block w-2 h-2 rounded-full bg-gold shrink-0" />
+                Colour & Materiality
+              </p>
+              <Img src="/projects/cepheid-culross/materiality.png" alt="Materiality moodboard: porcelain floor tiles, ceramic wall tiles, frosted glass, timber slats, plywood, cork, OSB, herringbone flooring, window treatment, acoustic absorbers, and colour palette" className="w-4/5 h-auto rounded-sm mb-8 mx-auto" />
             </>
           )}
 
