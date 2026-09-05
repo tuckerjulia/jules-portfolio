@@ -86,7 +86,7 @@ export default function Hero() {
           My name is Jules, a South African trained Interior Architect passionate about <PH>storytelling</PH> and <PH>crafting</PH> spaces through the lens of <PH>human wellbeing</PH> &amp; <PH>sustainability</PH>. After gaining three years of professional experience, earning my LEED Green Associate credential, and graduating Cum Laude with my Honours in Interior Architecture, I have developed a strong commitment to designing interiors that exceed client expectations.
         </p>
         <p className="text-xs font-light leading-relaxed text-stone/80 text-justify">
-          My work spans luxury residential and commercial projects across the world, where I have had the creative freedom to explore bespoke design solutions and refine my ability to craft detail-driven spaces that engage and inspire. My design approach blends <PH>aesthetics</PH>, <PH>comfort</PH>, <PH>place-making</PH> and <PH>brand identity</PH> to create <PH>meaningful</PH>, <PH>human-centred</PH> environments that tell <PH>stories</PH>. I am committed to delivering spaces that positively impact both their users and the environment.
+          My work spans luxury hospitality and residential projects across the world, where I have had the creative freedom to explore bespoke design solutions and refine my ability to craft detail-driven spaces that engage and inspire. My design approach blends <PH>aesthetics</PH>, <PH>comfort</PH>, <PH>place-making</PH> and <PH>brand identity</PH> to create <PH>meaningful</PH>, <PH>human-centred</PH> environments that tell <PH>stories</PH>. I am committed to delivering spaces that positively impact both their users and the environment.
         </p>
       </div>
 
@@ -115,7 +115,7 @@ export default function Hero() {
               My name is Jules, a South African trained Interior Architect passionate about <PH>storytelling</PH> and <PH>crafting</PH> spaces through the lens of <PH>human wellbeing</PH> &amp; <PH>sustainability</PH>. After gaining three years of professional experience, earning my LEED Green Associate credential, and graduating Cum Laude with my Honours in Interior Architecture, I have developed a strong commitment to designing interiors that exceed client expectations.
             </p>
             <p className="text-sm font-light leading-relaxed text-stone/80 text-justify">
-              My work spans luxury residential and commercial projects across the world, where I have had the creative freedom to explore bespoke design solutions and refine my ability to craft detail-driven spaces that engage and inspire. My design approach blends <PH>aesthetics</PH>, <PH>comfort</PH>, <PH>place-making</PH> and <PH>brand identity</PH> to create <PH>meaningful</PH>, <PH>human-centred</PH> environments that tell <PH>stories</PH>. I am committed to delivering spaces that positively impact both their users and the environment.
+              My work spans luxury hospitality and residential projects across the world, where I have had the creative freedom to explore bespoke design solutions and refine my ability to craft detail-driven spaces that engage and inspire. My design approach blends <PH>aesthetics</PH>, <PH>comfort</PH>, <PH>place-making</PH> and <PH>brand identity</PH> to create <PH>meaningful</PH>, <PH>human-centred</PH> environments that tell <PH>stories</PH>. I am committed to delivering spaces that positively impact both their users and the environment.
             </p>
           </div>
         </div>

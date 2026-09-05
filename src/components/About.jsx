@@ -17,7 +17,7 @@ export default function About() {
             to designing interiors that exceed client expectations.
           </p>
           <p className="text-sm md:text-base font-light leading-relaxed text-stone/80">
-            My work spans luxury residential and commercial projects across the world, where I have
+            My work spans luxury hospitality and residential projects across the world, where I have
             had the creative freedom to explore bespoke design solutions and refine my ability to
             craft detail-driven spaces that engage and inspire those who experience them. My design
             approach blends aesthetics, comfort, and brand identity to create meaningful,
