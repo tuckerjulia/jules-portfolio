@@ -176,6 +176,10 @@ const RESORT_PLANS_GALLERY = [
 
 const SKETCHES_GALLERY = Array.from({ length: 15 }, (_, i) => `/projects/closed-loop-incubator/sketches/${i + 1}.jpg`)
 
+const CREATIVE_INCUBATOR_GALLERY = Array.from({ length: 14 }, (_, i) => `/projects/creative-incubator/images/${i + 1}.jpg`)
+
+const MOTION_PICTURE_MUSEUM_GALLERY = Array.from({ length: 7 }, (_, i) => `/projects/motion-picture-museum/images/${i + 1}.jpg`)
+
 const SIDERIS_SITE_GALLERY = [
   '/projects/sideris-church-foyer/site/site-1.webp',
   '/projects/sideris-church-foyer/site/site-2.webp',
@@ -196,6 +200,8 @@ export default function ProjectModal({ project, onClose }) {
   // enlargedImg = { src, gallery: string[] | null, index: number }
   const [enlargedImg, setEnlargedImg] = useState(null)
   const [sketchesExpanded, setSketchesExpanded] = useState(false)
+  const [creativeImagesExpanded, setCreativeImagesExpanded] = useState(false)
+  const [museumImagesExpanded, setMuseumImagesExpanded] = useState(false)
   const touchStartX = useRef(null)
 
   function openEnlarged(src, gallery = null, index = 0) {
@@ -495,10 +501,11 @@ export default function ProjectModal({ project, onClose }) {
 
           {project.id === 3 && (
             <div className="mb-8">
-              <p className="text-xs tracking-widest uppercase text-stone/40 mb-4 flex items-center gap-2">
+              <p className="text-xs tracking-widest uppercase text-stone/40 mb-1 flex items-center gap-2">
                 <span className="inline-block w-2 h-2 rounded-full bg-gold shrink-0" />
-                Sneak Peek through Sketches
+                Sneak Peek
               </p>
+              <p className="text-xs italic mb-4 ml-4" style={{ color: '#fdbf69' }}>sketching exploration</p>
               {sketchesExpanded && (
                 <button
                   onClick={() => setSketchesExpanded(false)}
@@ -531,6 +538,104 @@ export default function ProjectModal({ project, onClose }) {
                     <ImageBanner
                       images={SKETCHES_GALLERY}
                       onImageClick={() => setSketchesExpanded(true)}
+                    />
+                    <div className="absolute top-3 left-3 pointer-events-none z-10">
+                      <MdTouchApp size={22} style={{ color: '#fdbf69' }} />
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+          )}
+
+          {project.id === 6 && (
+            <div className="mb-8">
+              <p className="text-xs tracking-widest uppercase text-stone/40 mb-1 flex items-center gap-2">
+                <span className="inline-block w-2 h-2 rounded-full bg-gold shrink-0" />
+                Sneak Peek
+              </p>
+              <p className="text-xs italic mb-4 ml-4" style={{ color: '#fdbf69' }}>upcycled luminaire</p>
+              {creativeImagesExpanded && (
+                <button
+                  onClick={() => setCreativeImagesExpanded(false)}
+                  className="block mb-3 text-[10px] tracking-widest uppercase text-stone/35 hover:text-stone/60 transition-colors duration-150"
+                >
+                  ← collapse
+                </button>
+              )}
+              <AnimatePresence mode="wait">
+                {creativeImagesExpanded ? (
+                  <motion.div
+                    key="grid"
+                    initial={{ opacity: 0, y: 12 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.35, ease: [0.25, 0.1, 0.25, 1] }}
+                    className="grid grid-cols-2 sm:grid-cols-3 gap-2"
+                  >
+                    {CREATIVE_INCUBATOR_GALLERY.map((src, i) => (
+                      <img
+                        key={i}
+                        src={src}
+                        alt=""
+                        className="w-full aspect-square object-cover rounded-sm cursor-zoom-in hover:opacity-90 transition-opacity duration-150"
+                        onClick={() => openEnlarged(src, CREATIVE_INCUBATOR_GALLERY, i)}
+                      />
+                    ))}
+                  </motion.div>
+                ) : (
+                  <motion.div key="banner" initial={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.2 }} className="relative">
+                    <ImageBanner
+                      images={CREATIVE_INCUBATOR_GALLERY}
+                      onImageClick={() => setCreativeImagesExpanded(true)}
+                    />
+                    <div className="absolute top-3 left-3 pointer-events-none z-10">
+                      <MdTouchApp size={22} style={{ color: '#fdbf69' }} />
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+          )}
+
+          {project.id === 4 && (
+            <div className="mb-8">
+              <p className="text-xs tracking-widest uppercase text-stone/40 mb-1 flex items-center gap-2">
+                <span className="inline-block w-2 h-2 rounded-full bg-gold shrink-0" />
+                Sneak Peek
+              </p>
+              <p className="text-xs italic mb-4 ml-4" style={{ color: '#fdbf69' }}>model exploration</p>
+              {museumImagesExpanded && (
+                <button
+                  onClick={() => setMuseumImagesExpanded(false)}
+                  className="block mb-3 text-[10px] tracking-widest uppercase text-stone/35 hover:text-stone/60 transition-colors duration-150"
+                >
+                  ← collapse
+                </button>
+              )}
+              <AnimatePresence mode="wait">
+                {museumImagesExpanded ? (
+                  <motion.div
+                    key="grid"
+                    initial={{ opacity: 0, y: 12 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.35, ease: [0.25, 0.1, 0.25, 1] }}
+                    className="grid grid-cols-2 sm:grid-cols-3 gap-2"
+                  >
+                    {MOTION_PICTURE_MUSEUM_GALLERY.map((src, i) => (
+                      <img
+                        key={i}
+                        src={src}
+                        alt=""
+                        className="w-full aspect-square object-cover rounded-sm cursor-zoom-in hover:opacity-90 transition-opacity duration-150"
+                        onClick={() => openEnlarged(src, MOTION_PICTURE_MUSEUM_GALLERY, i)}
+                      />
+                    ))}
+                  </motion.div>
+                ) : (
+                  <motion.div key="banner" initial={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.2 }} className="relative">
+                    <ImageBanner
+                      images={MOTION_PICTURE_MUSEUM_GALLERY}
+                      onImageClick={() => setMuseumImagesExpanded(true)}
                     />
                     <div className="absolute top-3 left-3 pointer-events-none z-10">
                       <MdTouchApp size={22} style={{ color: '#fdbf69' }} />
