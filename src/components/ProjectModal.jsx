@@ -180,6 +180,8 @@ const CREATIVE_INCUBATOR_GALLERY = Array.from({ length: 14 }, (_, i) => `/projec
 
 const MOTION_PICTURE_MUSEUM_GALLERY = Array.from({ length: 7 }, (_, i) => `/projects/motion-picture-museum/images/${i + 1}.jpg`)
 
+const HATFIELD_FIELD_STUDY_GALLERY = Array.from({ length: 9 }, (_, i) => `/projects/hatfield-wayste/images/${i + 1}.jpg`)
+
 const SIDERIS_SITE_GALLERY = [
   '/projects/sideris-church-foyer/site/site-1.webp',
   '/projects/sideris-church-foyer/site/site-2.webp',
@@ -202,6 +204,7 @@ export default function ProjectModal({ project, onClose }) {
   const [sketchesExpanded, setSketchesExpanded] = useState(false)
   const [creativeImagesExpanded, setCreativeImagesExpanded] = useState(false)
   const [museumImagesExpanded, setMuseumImagesExpanded] = useState(false)
+  const [hatfieldImagesExpanded, setHatfieldImagesExpanded] = useState(false)
   const touchStartX = useRef(null)
 
   function openEnlarged(src, gallery = null, index = 0) {
@@ -339,67 +342,6 @@ export default function ProjectModal({ project, onClose }) {
               ))
             )}
           </div>
-
-          {project.id === 10 && (
-            <>
-              <p className="text-xs tracking-widest uppercase text-stone/40 mb-1 flex items-center gap-2">
-                <span className="inline-block w-2 h-2 rounded-full bg-gold shrink-0" />
-                Brand
-              </p>
-              <p className="text-xs italic mb-4 ml-4" style={{ color: '#fdbf69' }}>Cepheid</p>
-              <p className="text-[10px] md:text-xs leading-relaxed text-stone/80 text-justify mb-4">Cepheid is a California-based diagnostics company that revolutionised testing through its GeneXpert System and range of on-demand disease tests. Its philosophy is rooted in Kaizen (the continuous pursuit of improvement).</p>
-              <Img src="/projects/cepheid-culross/brand.png" alt="Cepheid brand identity — logo, wordmark, and Kaizen philosophy diagram" className="w-2/3 h-auto rounded-sm mb-8 mx-auto" />
-              <p className="text-xs tracking-widest uppercase text-stone/40 mb-4 flex items-center gap-2">
-                <span className="inline-block w-2 h-2 rounded-full bg-gold shrink-0" />
-                COVID-19 &amp; Beyond
-              </p>
-              <div className="flex gap-2 mb-8">
-                <Img src="/projects/cepheid-culross/venn-safe-economy.png" alt="Venn diagram of physical, emotional, and cognitive factors converging on the safe economy" className="w-1/2 h-auto rounded-sm" />
-                <Img src="/projects/cepheid-culross/venn.png" alt="Venn diagram of placemaking, corporate culture, and best practice converging on work wellness" className="w-1/2 h-auto rounded-sm" />
-              </div>
-              <p className="text-xs italic mb-4" style={{ color: '#fdbf69' }}>Insights</p>
-              <Img src="/projects/cepheid-culross/insights.jpg" alt="Four workplace insights: evolving office roles, culture and collaboration, accelerating pre-pandemic trends, and hybrid workforce flexibility" className="w-full h-auto rounded-sm mb-8" />
-              <p className="text-xs tracking-widest uppercase text-stone/40 mb-1 flex items-center gap-2">
-                <span className="inline-block w-2 h-2 rounded-full bg-gold shrink-0" />
-                Design Principles
-              </p>
-              <p className="text-xs italic mb-4 ml-4" style={{ color: '#fdbf69' }}>Kaizen</p>
-              <p className="text-[10px] md:text-xs leading-relaxed text-stone/80 text-justify mb-4">Kaizen is a Japanese business philosophy of continuous, incremental improvement, rooted in simplicity, mindfulness and the belief that small positive changes can create meaningful progress over time.</p>
-              <Img src="/projects/cepheid-culross/design-principles.jpg" alt="Five Kaizen design principles: asymmetry, simplicity, naturalness, subtlety, and stillness" className="w-full h-auto rounded-sm mb-8" />
-              <p className="text-xs italic mb-4" style={{ color: '#fdbf69' }}>Workplace Implementation</p>
-              <Img src="/projects/cepheid-culross/implementation.jpg" alt="Five Kaizen design principles applied in the workplace: asymmetry, simplicity, naturalness, subtlety, and stillness" className="w-full h-auto rounded-sm mb-8" />
-              <p className="text-xs tracking-widest uppercase text-stone/40 mb-4 flex items-center gap-2">
-                <span className="inline-block w-2 h-2 rounded-full bg-gold shrink-0" />
-                Colour & Materiality
-              </p>
-              <p className="text-[10px] md:text-xs leading-relaxed text-stone/80 text-justify mb-4">A warm, natural palette with soft pastel colours creates a calm, light-filled and open environment for human wellbeing and productivity.</p>
-              <Img src="/projects/cepheid-culross/materiality.jpg" alt="Materiality moodboard: porcelain floor tiles, ceramic wall tiles, frosted glass, timber slats, plywood, cork, OSB, herringbone flooring, window treatment, acoustic absorbers, and colour palette" className="w-full h-auto rounded-sm mb-8" />
-              <p className="text-xs tracking-widest uppercase text-stone/40 mb-1 flex items-center gap-2">
-                <span className="inline-block w-2 h-2 rounded-full bg-gold shrink-0" />
-                Layouts
-              </p>
-              <div className="flex items-start gap-2 mb-8">
-                <div className="w-1/2">
-                  <p className="text-xs italic mb-1" style={{ color: '#fdbf69' }}>Ground Floor</p>
-                  <Img src="/projects/cepheid-culross/zoning-legend.jpg" alt="Zoning close-up showing cafe, meeting spaces, outdoor spaces, training space, and reception & foyer" className="w-full h-auto rounded-sm" />
-                </div>
-                <div className="w-1/2">
-                  <p className="text-xs italic mb-1" style={{ color: '#fdbf69' }}>First Floor</p>
-                  <Img src="/projects/cepheid-culross/zoning-legend-first-floor.jpg" alt="Zoning close-up showing meeting spaces, dedicated offices, open plan, wellness cafe & kitchenette, and breakout spaces" className="w-full h-auto rounded-sm" />
-                </div>
-              </div>
-              <p className="text-xs tracking-widest uppercase text-stone/40 mb-4 flex items-center gap-2">
-                <span className="inline-block w-2 h-2 rounded-full bg-gold shrink-0" />
-                Look & Feel
-              </p>
-              <p className="text-xs italic mb-4 ml-4" style={{ color: '#fdbf69' }}>Ground Floor</p>
-              <Img src="/projects/cepheid-culross/ground-floor.jpg" alt="Ground floor layout with programme zones: cafe, meeting spaces, training space, and reception & foyer" className="w-full h-auto rounded-sm mb-8" />
-              <p className="text-xs italic mb-4 ml-4" style={{ color: '#fdbf69' }}>First Floor</p>
-              <Img src="/projects/cepheid-culross/first-floor.jpg" alt="First floor layout with programme zones: meeting spaces, dedicated offices, open plan, wellness cafe & kitchenette, and breakout spaces" className="w-full h-auto rounded-sm mb-8" />
-              <p className="text-xs tracking-widests uppercase text-stone/40 mb-3">My Role</p>
-              <p className="text-[10px] md:text-xs leading-relaxed text-stone/80 text-justify mb-8">I supported the development of the Cepheid workplace concept, helping translate the principles of Kaizen into the spatial design. My role included contributing to the overall design approach, spatial planning, layouts and zoning, as well as researching Cepheid's brand, values and visual identity. I assisted in developing the workplace's look and feel, including the selection of materials, finishes and colour palettes, with a focus on creating a warm, welcoming and wellness-driven environment. I also contributed to the design of key spaces including the reception, wellness café, meeting areas and training spaces, ensuring each responded to its intended function while maintaining a cohesive overall design language.</p>
-            </>
-          )}
 
           {project.id === 9 && (
             <>
@@ -636,6 +578,55 @@ export default function ProjectModal({ project, onClose }) {
                     <ImageBanner
                       images={MOTION_PICTURE_MUSEUM_GALLERY}
                       onImageClick={() => setMuseumImagesExpanded(true)}
+                    />
+                    <div className="absolute top-3 left-3 pointer-events-none z-10">
+                      <MdTouchApp size={22} style={{ color: '#fdbf69' }} />
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+          )}
+
+          {project.id === 5 && (
+            <div className="mb-8">
+              <p className="text-xs tracking-widest uppercase text-stone/40 mb-1 flex items-center gap-2">
+                <span className="inline-block w-2 h-2 rounded-full bg-gold shrink-0" />
+                Sneak Peek
+              </p>
+              <p className="text-xs italic mb-4 ml-4" style={{ color: '#fdbf69' }}>field study</p>
+              {hatfieldImagesExpanded && (
+                <button
+                  onClick={() => setHatfieldImagesExpanded(false)}
+                  className="block mb-3 text-[10px] tracking-widest uppercase text-stone/35 hover:text-stone/60 transition-colors duration-150"
+                >
+                  ← collapse
+                </button>
+              )}
+              <AnimatePresence mode="wait">
+                {hatfieldImagesExpanded ? (
+                  <motion.div
+                    key="grid"
+                    initial={{ opacity: 0, y: 12 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.35, ease: [0.25, 0.1, 0.25, 1] }}
+                    className="grid grid-cols-2 sm:grid-cols-3 gap-2"
+                  >
+                    {HATFIELD_FIELD_STUDY_GALLERY.map((src, i) => (
+                      <img
+                        key={i}
+                        src={src}
+                        alt=""
+                        className="w-full aspect-square object-cover rounded-sm cursor-zoom-in hover:opacity-90 transition-opacity duration-150"
+                        onClick={() => openEnlarged(src, HATFIELD_FIELD_STUDY_GALLERY, i)}
+                      />
+                    ))}
+                  </motion.div>
+                ) : (
+                  <motion.div key="banner" initial={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.2 }} className="relative">
+                    <ImageBanner
+                      images={HATFIELD_FIELD_STUDY_GALLERY}
+                      onImageClick={() => setHatfieldImagesExpanded(true)}
                     />
                     <div className="absolute top-3 left-3 pointer-events-none z-10">
                       <MdTouchApp size={22} style={{ color: '#fdbf69' }} />
