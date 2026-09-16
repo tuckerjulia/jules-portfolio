@@ -273,15 +273,26 @@ export default function Home() {
         <section className="px-6 md:px-16 pb-20 max-w-5xl mx-auto">
           <div className="grid md:grid-cols-[200px_1fr] gap-8 md:gap-16 items-start">
             <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold pt-1">Letters of Recommendation</p>
-            <a
-              href="/references/Nonku%20Grootboom.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-sm font-light text-stone/80 hover:text-terra underline underline-offset-4 transition-colors"
-            >
-              <MdTouchApp size={18} style={{ color: '#fdbf69' }} className="shrink-0" />
-              Nonkululeko Grootboom
-            </a>
+            <div className="flex flex-col gap-3">
+              <a
+                href="/references/Amy%20May.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm font-light text-stone/80 hover:text-terra underline underline-offset-4 transition-colors"
+              >
+                <MdTouchApp size={18} style={{ color: '#fdbf69' }} className="shrink-0" />
+                Artala - Amy May
+              </a>
+              <a
+                href="/references/Nonku%20Grootboom.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm font-light text-stone/80 hover:text-terra underline underline-offset-4 transition-colors"
+              >
+                <MdTouchApp size={18} style={{ color: '#fdbf69' }} className="shrink-0" />
+                University of Pretoria - Nonkululeko Grootboom
+              </a>
+            </div>
           </div>
         </section>
       </FadeIn>
