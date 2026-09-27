@@ -11,7 +11,7 @@ const projects = [
     description:
       'Working alongside the church team in Ballard, Seattle, I helped envision a new foyer that would transform the existing 1982 church into a warmer, more welcoming space for the congregation. The design was rooted in a warm, vintage residential feel, creating an inviting environment where people could gather, connect, and linger.\n\nA rich palette of aged brick, walnut, velvet, and stained-glass brings warmth and character, while carefully selected upholstery and pendant colours echo the tones found within the existing stained-glass windows, creating a cohesive connection between the architecture and furnishings. The existing timber beams were exposed and celebrated as a defining feature of the structure, adding warmth, texture, and a sense of history to the space. Curved banquette seating and intimate furniture groupings soften the existing architecture, while a dedicated coffee bar and library nook with bar seating introduce more informal spaces for conversation, reading, and community.\n\nThe result is an approachable, layered interior that feels collected and timeless rather than institutional. Celebrating the character of the original building while creating a welcoming space for everyone who walks through the doors.',
     tags: ['Church Renovation', 'Adaptive Reuse', 'Community Space', 'Foyer Design', 'Concept Design'],
-    software: ['Enscape', 'Revit', 'Adobe Photoshop'],
+    software: ['Revit', 'Krea AI', 'Adobe Photoshop'],
   },
   {
     id: 7,
