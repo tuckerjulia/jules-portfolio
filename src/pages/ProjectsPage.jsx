@@ -34,7 +34,7 @@ function ProjectCard({ project, onClick }) {
   const padding = (isMobile && project.imagePaddingMobile) || project.imagePadding
 
   return (
-    <motion.button variants={cardVariants} onClick={onClick} className="group text-left">
+    <motion.button variants={cardVariants} onClick={onClick} className="group text-left" data-cursor-grow>
       <div
         className="w-full aspect-[3/2] overflow-hidden rounded-sm mb-4 bg-stone/5 box-border"
         style={{

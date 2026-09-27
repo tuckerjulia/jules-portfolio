@@ -7,6 +7,7 @@ import MissionPage from './pages/MissionPage'
 import BeyondPage from './pages/BeyondPage'
 import ContactPage from './pages/ContactPage'
 import Footer from './components/Footer'
+import Cursor from './components/Cursor'
 
 function AnimatedRoutes() {
   const location = useLocation()
@@ -32,6 +33,7 @@ export default function App() {
         <AnimatedRoutes />
         <Footer />
       </main>
+      <Cursor />
     </BrowserRouter>
   )
 }

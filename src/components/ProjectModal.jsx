@@ -919,16 +919,28 @@ export default function ProjectModal({ project, onClose }) {
                   <Img key={n} src={`/projects/tropical-spa/shop-${n}.webp`} alt={`Spa shop view ${n}`} className="w-full h-auto rounded-sm" gallery={SHOP_GALLERY} galleryIndex={i + 1} />
                 ))}
               </div>
-              <a
-                href="/projects/tropical-spa/shop-display-counter.pdf"
-                download
-                className="inline-flex items-center gap-1 text-[8px] tracking-widest lowercase text-sage border border-sage/30 px-2 py-1 rounded-sm hover:bg-sage/5 transition-colors duration-150"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" className="w-2.5 h-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" />
-                </svg>
-                download technical drawing
-              </a>
+              <div className="flex flex-col items-start gap-2">
+                <a
+                  href="/projects/tropical-spa/shop-display-counter.pdf"
+                  download
+                  className="inline-flex items-center gap-1 text-[8px] tracking-widest lowercase text-sage border border-sage/30 px-2 py-1 rounded-sm hover:bg-sage/5 transition-colors duration-150"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" className="w-2.5 h-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" />
+                  </svg>
+                  download technical drawing - joinery
+                </a>
+                <a
+                  href="/projects/tropical-spa/spa-arrival-door-detail.pdf"
+                  download
+                  className="inline-flex items-center gap-1 text-[8px] tracking-widest lowercase text-sage border border-sage/30 px-2 py-1 rounded-sm hover:bg-sage/5 transition-colors duration-150"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" className="w-2.5 h-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" />
+                  </svg>
+                  download technical drawing - door detail
+                </a>
+              </div>
             </div>
           )}
 
@@ -953,7 +965,7 @@ export default function ProjectModal({ project, onClose }) {
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-2.5 h-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" />
                 </svg>
-                download technical drawing
+                download technical drawing - joinery
               </a>
             </div>
           )}
@@ -975,7 +987,7 @@ export default function ProjectModal({ project, onClose }) {
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-2.5 h-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" />
                 </svg>
-                download technical drawing
+                download technical drawing - joinery
               </a>
             </div>
           )}
@@ -997,7 +1009,7 @@ export default function ProjectModal({ project, onClose }) {
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-2.5 h-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" />
                 </svg>
-                download technical drawing
+                download technical drawing - joinery
               </a>
             </div>
           )}
