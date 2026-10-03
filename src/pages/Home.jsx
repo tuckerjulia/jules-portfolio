@@ -8,8 +8,10 @@ import PageTransition from '../components/PageTransition'
 function WorkEntry({ dates, company, role, children }) {
   const [open, setOpen] = useState(false)
   const [pinned, setPinned] = useState(false)
+  const expandable = Boolean(children)
 
   function handleClick() {
+    if (!expandable) return
     if (pinned) {
       setPinned(false)
       setOpen(false)
@@ -25,14 +27,14 @@ function WorkEntry({ dates, company, role, children }) {
         {dates.map((d, i) => <p key={i}>{d}</p>)}
       </div>
       {!open && (
-        <MdTouchApp size={18} style={{ color: '#fdbf69' }} className="mt-1 opacity-70 shrink-0" />
+        <MdTouchApp size={18} style={{ color: '#fdbf69' }} className={`mt-1 opacity-70 shrink-0 ${expandable ? '' : 'invisible'}`} />
       )}
       <div
         className="flex-1"
-        onMouseEnter={() => setOpen(true)}
+        onMouseEnter={() => { if (expandable) setOpen(true) }}
         onMouseLeave={() => { if (!pinned) setOpen(false) }}
       >
-        <div className="cursor-pointer" onClick={handleClick}>
+        <div className={expandable ? 'cursor-pointer' : ''} onClick={handleClick}>
           <p className={`text-sm font-light transition-colors duration-200 ${open ? 'text-terra' : 'text-stone/80'}`}>
             {company}
           </p>
@@ -59,7 +61,9 @@ export default function Home() {
           <div className="grid md:grid-cols-[200px_1fr] gap-8 md:gap-16 items-start">
             <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold pt-1">Work Experience</p>
             <div className="space-y-6">
-              <WorkEntry dates={['Jun 2026 –', 'Present']} company="Artala" role="Social Media Consultant & Interior Design Assistant · Remote">
+              <WorkEntry dates={['Sep 2026 –', 'Present']} company="Mehrai Design" role="Freelance Interior Designer · London" />
+
+              <WorkEntry dates={['Jun 2026 –', 'Present']} company="Artala" role="Freelance Social Media Consultant · Remote">
                 <p className="text-xs font-light text-stone/70 leading-relaxed text-justify">Supported a boutique U.S.-based interior design studio across creative marketing and project development. Managed social media content and brand communications while assisting with interior design research, material sourcing and product selection. Conducted research into U.S. residential design trends, suppliers and products to support project development. Collaborated closely with the studio founder on creative concepts and project coordination.</p>
               </WorkEntry>
 
